@@ -30,3 +30,6 @@ Custom starlette JSONResponse to avoid automatic lowercase header key conversion
 'Signature': 'algorithm=AES, signature=hohohohohoho', 
 'content-length': '25'}
 ```
+
+### Limitation
+1. For the time being only to handle json response
