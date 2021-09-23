@@ -16,7 +16,7 @@ Custom starlette JSONResponse to avoid automatic lowercase header key conversion
             "Content-Type": "application/json; charset=UTF-8",
             "Client-Id": "blablabla",
             "Response-Time": "2020091067404843557525",
-            "Signature": "algorithm=RSA256, keyVersion=2, signature=" + sign
+            "Signature": "algorithm=AES, signature=" + sign
         }
 
         return BartJSONResponse(content=content, headers=header)
@@ -24,7 +24,7 @@ Custom starlette JSONResponse to avoid automatic lowercase header key conversion
 
 ### The response header received by client would be like:
 ```bash
-{'date': 'Thu, 23 Sep 2021 15:27:40 GMT', 'server': 'uvicorn', 
+{'date': 'Thu, 23 Sep 2021 15:58:58 GMT', 'server': 'uvicorn', 
 'Content-Type': 'application/json; charset=UTF-8, application/json', 
 'Client-Id': 'blablabla', 'Response-Time': '2020091067404843557525', 
 'Signature': 'algorithm=AES, signature=hohohohohoho', 
