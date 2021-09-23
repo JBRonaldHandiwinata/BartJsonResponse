@@ -27,6 +27,6 @@ Custom starlette JSONResponse to avoid automatic lowercase header key conversion
 {'date': 'Thu, 23 Sep 2021 15:27:40 GMT', 'server': 'uvicorn', 
 'Content-Type': 'application/json; charset=UTF-8, application/json', 
 'Client-Id': 'blablabla', 'Response-Time': '2020091067404843557525', 
-'Signature': 'algorithm=RSA256, keyVersion=2, signature=hohohohohoho', 
+'Signature': 'algorithm=AES, signature=hohohohohoho', 
 'content-length': '25'}
 ```
